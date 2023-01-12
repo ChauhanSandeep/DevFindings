@@ -1,5 +1,7 @@
 # Database Design Using Entity Relationship Model
 
+## Introduction
+
 An Entity Relationship Diagram (ERD) is a graphical representation of the entities, relationships, and attributes that make up a system. It is commonly used to visually explain the structure of a system, and how the entities in the system interact with each other.
 
 In this tutorial, we will discuss how we can do database design using an Entity relationship diagram. We will use Crow Feet annotations to describe the relationship between tables.
@@ -8,7 +10,7 @@ In this tutorial, we will discuss how we can do database design using an Entity 
 
 Crow's Foot Notation is an extremely useful diagrammatic representation of the relationship between various entities. Through its lines and symbols, it can provide a clear and concise explanation of how two different entities interact with each other, as well as the cardinality of that relationship. This graphical representation is invaluable in helping to quickly grasp the complexities of a system, making it an essential tool for any database administrator.
 
-## Basics
+### Basics
 
 1. Relation between two tables is displayed by connecting these tables with connector lines
     
