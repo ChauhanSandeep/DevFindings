@@ -5,6 +5,7 @@ seoDescription: "Learn how to create an Entity Relationship Diagram (ERD) to vis
 datePublished: Thu Jan 12 2023 18:30:00 GMT+0000 (Coordinated Universal Time)
 cuid: clctigyh1000209mpcz18aqmn
 slug: how-to-design-a-database-with-erd-a-beginners-guide
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1703600038910/3de55e38-7225-48c5-b272-918cdd9daa10.png
 tags: databases, system-design
 
 ---
@@ -50,7 +51,6 @@ Now that we have understood the basics of the Crow foot notation, let's see how 
     
     * Each person can only have one bank account
         
-    
     * each account can belong to only one customer.
         
     
