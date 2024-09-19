@@ -86,6 +86,18 @@ Just like in software engineering, building a data pipeline involves challenges 
 
 4\. **Failure Recovery**: Like any software system, data pipelines can fail. Engineers use strategies like checkpointing and retries to ensure data is not lost or corrupted.
 
+**How LinkedIn’s Data Warehouse Works**
+
+At LinkedIn, data warehousing operates a bit differently from traditional systems. Here’s a broader look at how it works:
+
+1\. **Raw Data Storage**: Initially, data is stored as raw Avro files in HDFS or a data lake. This provides a scalable way to store vast amounts of raw data without the overhead of a traditional database.
+
+2\. **Transformation Process**: Using **Apache Spark**, this raw data is transformed, cleaned, and stored in Avro format in a **derived layer**.
+
+3\. **Query Layer**: The transformed data is then queried using **Presto**, which serves as the query engine over this data lake. Presto enables fast, SQL-like queries directly over the file system without requiring the data to be imported into a traditional database.
+
+4\. **Consumption Layer (Darwin)**: Finally, Darwin provides an easy-to-use interface for engineers to write SQL queries and analyze the data.
+
 **Wrapping Up**
 
 In summary, the world of data engineering shares many parallels with software engineering. Data pipelines automate the movement and transformation of data, and ETL is the most common workflow for processing large datasets. Understanding these concepts allows software engineers to design more data-driven applications, collaborate with data teams, and take on larger technical challenges in a data-driven world.
